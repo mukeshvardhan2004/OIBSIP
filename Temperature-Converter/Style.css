@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.container {
+    max-width: 450px;
+    background: linear-gradient(#8a2387, #e94057, #f27121);
+    border: 2px solid white;
+    font-family: sans-serif;
+    padding: 20px;
+    border-radius: 20%;
+    box-shadow: 0 10px 32px 0 rgba(255, 255, 255, 0.37);
+    transition: transform 0.5s ease;
+}
+.container:hover {
+    transform: scale(1.20);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Added to stack the elements vertically */
+    text-align: center; /* Center align text */
+}
+
+.temperature-icon {
+    font-size: 45px;
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+    letter-spacing: 1.4px;
+    margin-bottom: 10px; /* Added spacing between h1 and icon */
+}
+
+#celsius, #fahrenheit, #kelvin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+input {
+    flex: 5;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+    padding: 0 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+.icon {
+    flex: 1;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 30px;
+    background: #000;
+    color: white;
+    border-radius: 0 50px 50px 0;
+    transition: transform 1s ease-in-out;
+}
+.icon:hover {
+    transform: rotate(-360deg);
+}
+
+.button {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.button button {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 50px black ;
+    transition: background 0.5s, color 0.25s;
+}
+.button button:hover {
+    background: #000;
+    color: #fff;
+}
