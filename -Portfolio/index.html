@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Saran Teja | Front-end NINJA</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">
+        <a href="#"><img src="assets/saran_logo.png" alt="logo" /></a>
+      </div>
+      <ul class="nav__links">
+        <li class="link"><a href="#">Home</a></li>
+        <li class="link"><a href="#">About</a></li>
+        <li class="link"><a href="#">Projects</a></li>
+        <li class="link"><a href="#">Contact</a></li>
+      </ul>
+      <button class="btn" onclick="downloadCV()">Download CV</button>
+    </nav>
+
+    <header class="section__container header__container">
+      <div class="header__image">
+        <img src="assets/ninga.png" alt="header" />
+      </div>
+      <div class="header__content">
+        <span class="bg__blur"></span>
+        <span class="bg__blur header__blur"></span>
+        <h1><span>FRONT </span>END NINJA</h1>
+        <p>
+          Hi, I'm ____. A passionate Front-end Developer based in India.
+          📍
+        </p>
+        <!-- <button class="btn">Get Started</button> -->
+      </div>
+    </header>
+    <!--About me-->
+    <section class="review">
+      <div class="section__container review__container">
+        <span><i class="ri-sword-line"></i></span>
+        <div class="review__content">
+          <h4>WHO AM I ?</h4>
+          <p>
+            I'm a Front End Ninja with a passion for turning visions into
+            vibrant web experiences. Armed with HTML, CSS, JavaScript, and the
+            power of Tailwind CSS, I craft responsive, stunning, and accessible
+            applications. I thrive on the cutting edge of web development,
+            constantly honing my skills and embracing new challenges. My
+            mission? To create digital magic that not only meets but exceeds
+            user expectations.
+          </p>
+          <div class="review__rating">
+            <span><i class="ri-fire-fill"></i></span>
+            <!-- Fire symbol for high ratings -->
+            <span><i class="ri-fire-fill"></i></span>
+            <span><i class="ri-fire-fill"></i></span>
+            <span><i class="ri-fire-fill"></i></span>
+            <span><i class="ri-fire-line"></i></span>
+            <!-- Outline fire symbol for half rating -->
+          </div>
+          <div class="review__footer">
+            <div class="review__member">
+              <img src="assets/Fitclub.png" alt="member" />
+              <div class="review__member__details">
+                <h4>NAME</h4>
+                <span><i class="ri-code-s-slash-line"></i></span>
+                <span><i class="ri-lightbulb-flash-line"></i></span>
+                <span><i class="ri-rocket-line"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--My Skills-->
+    <section class="section__container explore__container">
+      <div class="explore__header">
+        <h2 class="section__header">MY PROWESS</h2>
+        <div class="explore__nav">
+          <span><i class="ri-arrow-left-line"></i></span>
+          <span><i class="ri-arrow-right-line"></i></span>
+        </div>
+      </div>
+      <div class="explore__grid">
+        <div class="explore__card">
+          <span><i class="ri-html5-fill"></i></span
+          ><!-- Symbol representing HTML -->
+          <h4>HTML</h4>
+          <p>Structure & Markup</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-css3-fill"></i></span>
+          <!-- Symbol representing CSS -->
+          <h4>CSS</h4>
+          <p>Styling & Design</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-javascript-fill"></i></span>
+          <!-- Symbol representing JavaScript -->
+          <h4>JS</h4>
+          <p>Interaactivity & Behavior</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-code-fill"></i></span>
+          <!-- Symbol representing Python -->
+          <h4>PYTHON</h4>
+          <p>Versatile & Readable</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Why Me ?-->
+    <section class="section__container join__container">
+      <h2 class="section__header">WHY ME ?</h2>
+      <p class="section__subheader">
+        As a motivated and quick-learning fresher, I bring a strong foundation
+        in Front End Development and a passion for leveraging my skills to
+        contribute to innovative projects and drive impactful results.
+      </p>
+      <div class="join__image">
+        <img src="assets/ninja mask.jpg" alt="Join" />
+        <div class="join__grid">
+          <div class="join__card">
+            <span><i class="ri-tools-line"></i></span>
+            <div class="join__card__content">
+              <h4>Resourceful</h4>
+            </div>
+          </div>
+          <div class="join__card">
+            <span><i class="ri-group-line"></i></span>
+
+            <div class="join__card__content">
+              <h4>Team Player</h4>
+            </div>
+          </div>
+          <div class="join__card">
+            <span><i class="ri-focus-line"></i></span>
+            <div class="join__card__content">
+              <h4>Detail-oriented</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--My Projects-->
+    <section class="section__container price__container">
+      <h2 class="section__header">NINJA'S Projects</h2>
+      <p class="section__subheader">
+        These are just samples ! Big ones coming soon.
+      </p>  
+      <div class="price__grid">
+        <div class="price__card project-1">
+          <div class="price__card__content project-1-content">
+            <h3>FitClub</h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Fully Responsive Design
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              User-Friendly Interface
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Built with HTML and CSS
+            </p>
+          </div>
+          <button class="btn price__btn">Preview</button>
+        </div>
+
+        <div class="price__card">
+          <div class="price__card__content project-2">
+            <h3>Character Showcase</h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Dynamic Character
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Easy to Navigate
+            </p>
+          </div>
+          <button class="btn price__btn">Preview</button>
+        </div>
+        <div class="price__card" id="project-3">
+          <div class="price__card__content">
+            <h3>3D SHOE</h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Interactive 3D Models
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Interative
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Powered by Spine 3D
+            </p>
+          </div>
+          <button class="btn price__btn">Preview</button>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact me-->
+    <footer class="section__container footer__container">
+      <span class="bg__blur"></span>
+      <span class="bg__blur footer__blur"></span>
+      <div class="footer__col">
+        <div class="footer__logo">
+          <img src="assets/saran_logo" alt="logo" />
+        </div>
+        <p>
+          Take the first step towards a healthier, stronger you with our
+          unbeatable pricing plans. Let's sweat, achieve, and conquer together!
+        </p>
+        <div class="footer__socials">
+          <a href="#"
+            ><i class="ri-github-fill"></i
+          ></a>
+          <a href="#"><i class="ri-instagram-line"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"
+            ><i class="ri-linkedin-fill"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="#">Phone</a>
+        <a href="#">Mail</a>
+        <a href="#">Linkedin</a>
+      </div>
+    </footer>
+
+    <div class="footer__bar">Copyright ©2024 </div>
+  </body>
+  <script>
+    function downloadCV() {
+      var link = document.createElement("a");
+      link.href =
+        "resume link";
+      link.download = "resume.pdf";
+      link.click();
+    }
+  </script>
+</html>
